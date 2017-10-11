@@ -1,7 +1,9 @@
 <img src="https://github.com/Ark-IoT/ark-paperwallet-pi/blob/master/ark_paperwallet_pi_logo.png" width="350">  
 
+![Version](https://img.shields.io/badge/version-0.9.0--beta-orange.svg?style=flat-square&&colorA=494949) 
+[![License](https://img.shields.io/badge/license-MIT-BE90D4.svg?style=flat-square&&colorA=494949)](http://creativecommons.org/licenses/by-sa/4.0/) 
 
-### What is Ark: PaperWallet Pi
+## What is ***Ark: PaperWallet Pi***
 
 **Ark: PaperWallet Pi** is an offline, secure, WiFi-accessible webserver;  
 a hardware-based paper wallet generator for the Ark cryptocurrency!  
@@ -12,7 +14,7 @@ Ark: PaperWallet Pi is a FOSS project, GPL3 compatible and MIT Licensed.
 
 -----
 
-### Screenshot  
+## Screenshot  
 
 Address: **paperwallet.lan**  
 
@@ -20,19 +22,42 @@ Address: **paperwallet.lan**
 
 **Welcome Aboard!**  
 
------
+-----  
 
-### Tested Hardware  
-#### Raspberry Pi Zero W:  
+## Requirements
+- Raspberry Pi 1/2/3/Zero/ZeroW
+- Class 10/U10 MicroSD-Card
+- Micro-USB Cable
+- Host Computer (Window, Linux, macOS)
 
-<img src="https://github.com/sleepdefic1t/ark-nbx/blob/master/rpizw.png" width="300">
+#
+
+#### Supported Configurations
+
+|  Hardware  |    Software    |
+| :----------: | :---------: |
+|<table> <tr><th>Platform</th><th>Tested</th></tr><tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_2-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_3-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_Zero-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_Zero_W-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/yes-working-brightgreen.svg?style=flat-square,colorA=494949)</td></tr> </table> | <table> <tr><th>Platform</th><th>Tested</th></tr> <tr><td>![OS](https://img.shields.io/badge/os-arch-52B3D9.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![OS](https://img.shields.io/badge/os-raspbian-52B3D9.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/yes-working-brightgreen.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![OS](https://img.shields.io/badge/os-ubuntu-52B3D9.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgray.svg?style=flat-square,colorA=494949)</td></tr> </table> | 
+
+#### example:   
+
+- Raspberry Pi Zero W  
+    <img src="https://github.com/sleepdefic1t/ark-nbx/blob/master/rpizw.png" width="300">  
 
 
 |    Part     |   Source    |
 | :---------: | :---------: |
-| Raspberry Pi Zero W | https://www.adafruit.com/product/3400 |  
-| "Class 10/U1" microSD-card | **ex:** https://www.adafruit.com/product/2692 |
+| Raspberry Pi Zero W | [**Adafruit: Raspberry Pi Zero W**](https://www.adafruit.com/product/3400) |  
+| "Class 10/U1" microSD-card | **ex:** [**Adafruit: 8GB Class 10 SD/MicroSD Memory Card**](https://www.adafruit.com/product/2692)|
+| Raspbian Stretch Lite | [**raspberrypi.org/downloads/raspbian**](https://www.raspberrypi.org/downloads/raspbian/) |
 
+#
+
+- requirement notes:  
+  - For non-Zero W's & Pi 3's, 
+    you will need a [**compatible**](http://elinux.org/RPi_USB_Wi-Fi_Adapters) USB-WiFi adapter.
+  - If installing from Raspbian or another RPi distro, 
+    you'll need ```Git``` to clone this repo.  
+  ```sudo apt-get install git```
 
 -----
 
@@ -56,15 +81,7 @@ Address: **paperwallet.lan**
 
 -----
 
-
 # Installation:   
-
-#### Requirements
-- For non-Zero W Pi's, you will need a [**compatible**](http://elinux.org/RPi_USB_Wi-Fi_Adapters) USB-WiFi adapter.
-- If installing from Raspbian or another RPi distro, you'll need ```Git``` to clone this repo.  
-  ```sudo apt-get install git```
-
-#
 
 **1.** Connect to your RPi.   
 - if using Raspbian Stretch Lite: 
