@@ -115,7 +115,7 @@ Address: **paperwallet.lan**
 
 **5.** 'cd' to 'paperwallet' and run the install.sh file:  
 - ```cd paperwallet```  
-- ```sudo ./install.sh```  
+- ```sudo bash install.sh```  
 
 #
 
