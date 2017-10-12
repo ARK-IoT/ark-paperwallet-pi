@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo ""
-echo ""
+echo
+echo
 echo "3.1415926535897932384626433832795028841971693993751058209"
 echo "    _____         __            __________               "
 echo "   /  _  \_______|  | __        \______   \ _______  ___ "
@@ -16,13 +16,13 @@ echo "|   __|| .'|| . || -_||  _|  | | | || .'|| || || -_||  _|"
 echo "|__|   |__,||  _||___||_|    |_____||__,||_||_||___||_|  "
 echo "            |_|                                          "
 echo "823066470938446095505822317253594081284811174502841027019"
-echo ""
+echo
 echo "Website: https://ark.io | https://github.com/Ark-IoT"
 echo "	Ark: Paper Wallet Version: 0.9.0"
-echo ""
+echo
 echo "385211055596446229489549303819644288109756659334461284756"
-echo ""
-echo ""
+echo
+echo
 
 # Import PaperWallet conf
 CURRENT_CONF=paperwallet/conf/paperwallet.conf
@@ -83,32 +83,35 @@ apt-get install -y hostapd lighttpd dnsmasq
 # PaperWallet auto-configuration
 /opt/paperwallet/bin/install_paperwallet.sh /opt/paperwallet/conf/paperwallet.conf part2
 
-# Configure and start PaperWallet.service
-sudo systemctl enable paperwallet
-echo ""
+# Configure and start ArkBox.service
+echo "stopping hostapd, dnsmasq, and lighttpd.."
 sudo pkill hostapd
 sudo pkill dnsmasq
 sudo pkill lighttpd
-echo ""
+echo "pkill'd"
+echo
+echo "enabling arkbox"
+sudo systemctl enable arkbox
+echo
 
-# Configure PaperWallet for start at boot
-sudo update-rc.d -f paperwallet defaults
+# Configure ArkBox for start at boot
+sudo update-rc.d -f arkbox defaults
 
 # Make SD-Card Read-Only
 # more info: https://learn.adafruit.com/read-only-raspberry-pi/
 #	FIXME: AP & SSH will work; Redirect & HTML will not
-#sudo bash paperwallet/bin/read-only-fs.sh
+#sudo bash arkbox/bin/read-only-fs.sh
 
-echo ""
-echo ""
+echo
+echo
 echo "	####################################"
-echo "	#  PaperWallet has been installed  #"
+echo "	#  ArkBox has been installed  #"
 echo "	####################################"
-echo ""
-echo ""
-echo ""
+echo
+echo
+echo
 echo "	     Please 'sudo reboot' now."
-echo ""
-echo ""
+echo
+echo
 
 exit 0
