@@ -36,7 +36,7 @@ Address: **paperwallet.lan**
 
 |  Hardware  |    Software    |
 | :----------: | :---------: |
-|<table> <tr><th>Platform</th><th>Tested</th></tr><tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_2-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_3-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_Zero-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_Zero_W-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/yes-working-brightgreen.svg?style=flat-square,colorA=494949)</td></tr> </table> | <table> <tr><th>Platform</th><th>Tested</th></tr> <tr><td>![OS](https://img.shields.io/badge/os-arch-52B3D9.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![OS](https://img.shields.io/badge/os-raspbian-52B3D9.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/yes-working-brightgreen.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![OS](https://img.shields.io/badge/os-ubuntu-52B3D9.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgray.svg?style=flat-square,colorA=494949)</td></tr> </table> | 
+|<table> <tr><th>Platform</th><th>Tested</th></tr><tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_2-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_3-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_Zero-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![Hardware](https://img.shields.io/badge/hw-Raspberry_Pi_Zero_W-orange.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/yes-working-brightgreen.svg?style=flat-square,colorA=494949)</td></tr> </table> | <table> <tr><th>Platform</th><th>Tested</th></tr> <tr><td>![OS](https://img.shields.io/badge/os-arch-52B3D9.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/no-____-lightgrey.svg?style=flat-square,colorA=494949)</td></tr> <tr><td>![OS](https://img.shields.io/badge/os-raspbian-52B3D9.svg?style=flat-square,colorA=494949)</td><td>![Tested](https://img.shields.io/badge/yes-working-brightgreen.svg?style=flat-square,colorA=494949)</td></tr> </table> | 
 
 #### example:   
 
@@ -131,7 +131,7 @@ Address: **paperwallet.lan**
 
 #
 
-**8.** Using a standard web-browser, navigate to:  
+**8.** Using a web-browser, navigate to:  
 - ```paperwallet.lan```  
 **Welcome Aboard!**  
 
@@ -139,32 +139,12 @@ Address: **paperwallet.lan**
 
 ## Troubleshooting:
 
-### **'Ark: Paper Wallet' WiFi network not showing up.**  
-There are many errors that can cause this.
-Try running ```sudo ./install.sh``` again.  
-Using another micro-usb cable or a 'class 10' microSD card can usually fix this as well.  
-
-#
-
-### The Wifi signal drops/disappears every time I connect!
-This can be caused by not getting enough power(mAh/Ah).
-Make sure to use a 5V >=1,000mAh/1Ah power supply. 2Ah or better if using NFC or additional hardware.
-If your power source meets those requirements, try another power source or USB-cable.
-
-#
-
-### **'Broken Pipe' / Timeout / Disconnect Errors**  
-If for any reason your RPi's connection fails/freezes during installation,  
-Reconnect to your Pi, then run:  
-```sudo dpkg --configure -a```  
-You should then return to Step 5,  
-'cd' into 'paperwallet' then,  
- ```sudo ./install.sh```  
-to finish installation.
+- See [**Troubleshooting.md**](https://github.com/Ark-IoT/ark-paperwallet-pi/blob/master/docs/TROUBLESHOOTING.md)
 
 -----
 
 ## ToDo:
+
 - [ ] Make a better todo
 - [ ] Documention!
 
